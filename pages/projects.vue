@@ -12,8 +12,7 @@
         </nav>
       </div>
       
-        <div class="content">
-            <h1>My Projects</h1>
+            <h1 class="heading">My Projects</h1>
             <p class="intro">Explore some of the projects I have worked on during my academic journey.</p>
             
             <div class="projects">
@@ -37,7 +36,6 @@
                     <p>A simple C++ console game where the player must guess Higher or Lower, depending on which country's populations are given.</p>
                 </div>
             </div>
-        </div>
 
         <footer>
             <p>&copy; 2025 - Joelle Tsaku</p>
@@ -53,26 +51,35 @@ useHead({
   
 <style scoped>
 .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 2.5em;
+  color: #9d91ff;
+  text-align: center;
+  margin: 40px 0 20px;
 }
 
 .intro {
-    font-size: 1.2em;
-    color: #bbb;
-    margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #bbb;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -86,19 +93,20 @@ h1 {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(97, 40, 202, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(97, 40, 202, 0.3);
 }
 
 .card h3 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-    color: #9d91ff;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #9d91ff;
 }
 
 .card p {
-    font-size: 1.1em;
-    color: #ccc;
-    }
+  font-size: 1.1em;
+  color: #ccc;
+}
+
 </style>
   

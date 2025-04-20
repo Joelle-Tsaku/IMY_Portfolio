@@ -4,7 +4,7 @@
     <div class="page">
       <!-- Navbar -->
       <div class="navbar-container">
-        <img src="/public/Penguin.ico" alt="logo" class="logo" />
+        <img src="/public/Penguin.ico" alt="logo" class="logo" NuxtLink to="/"/>
         <h2>Information and Knowledge Systems Student</h2>
         <nav class="navbar">
           <NuxtLink to="/" class="nav-button">Home</NuxtLink>
@@ -14,9 +14,9 @@
       </div>
   
       <div class="content-container">
-        <h1>Contact Me</h1>
+        <h1 class="heading">Contact Me</h1>
   
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" data-netlify="true" netlify action="/thanks">
             <input type="hidden" name="form-name" value="contact" />
 
             <label for="name">First Name</label>
@@ -31,7 +31,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" v-model="message" placeholder="Chat with me" required></textarea>
     
-            <button type="submit" @click="thanks">Send</button>
+            <button type="submit">Send</button>
         </form>
       </div>
   
@@ -67,9 +67,16 @@
     background-color: #1c1c1c;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(141, 122, 221, 0.6);
   }
   
+  .heading {
+  font-size: 2.5em;
+  color: #9d91ff;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
   h1 {
     text-align: center;
     font-size: 2.4em;
@@ -101,7 +108,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #3e8ed0;
+  border-color: #c57ec2;;
 }
 
 textarea {
@@ -110,7 +117,7 @@ textarea {
 
 button {
   margin-top: 20px;
-  background-color: #3e8ed0;
+  background-color: #c57ec2;
   color: white;
   padding: 12px;
   border: none;
@@ -122,7 +129,7 @@ button {
 }
 
 button:hover {
-  background-color: #2f76b3;
+  background-color: #a736a1;
 }
   </style>
   
