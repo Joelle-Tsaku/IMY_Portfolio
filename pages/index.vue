@@ -167,6 +167,7 @@ footer p {
 body {
   background-color: black;
   color: white;
+  background-image: url('Background.png');
 }
 
 .bio {
@@ -230,7 +231,7 @@ h2 {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-left: 290px;
+  margin-left: 190px;
   margin-top: -80px;
 }
 
