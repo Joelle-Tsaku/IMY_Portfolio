@@ -34,7 +34,6 @@
             <button type="submit">Send</button>
         </form>
       </div>
-  
       <footer>
         <p>&copy; 2025 - Joelle Tsaku</p>
       </footer>
